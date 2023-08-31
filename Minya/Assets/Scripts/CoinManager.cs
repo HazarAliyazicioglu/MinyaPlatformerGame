@@ -13,7 +13,7 @@ public class CoinManager : MonoBehaviour
         if (other.tag == "Coins")
         {
 
-            AudioSource.PlayClipAtPoint(coinClip,transform.position,1f);
+            AudioSource.PlayClipAtPoint(coinClip,transform.position,0.4f);
             Destroy(other.gameObject);
             if (AddingScore != null)
             {
